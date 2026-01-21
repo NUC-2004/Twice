@@ -7,7 +7,7 @@ public class BoxController : MonoBehaviour
     public float slideForce = 2f; // 箱子在斜坡上的滑动力
     public float maxSlopeAngle = 45f;  // 最大斜坡角度，超过该角度箱子会滑下
     public float edgeRayLength = 0.2f; // 检测平台边缘的射线长度
-    public float gravityScale = 2f;  // 重力比例，控制箱子下落的速度
+    public float gravityScale = 1f;  // 重力比例，控制箱子下落的速度
 
     private Rigidbody2D rb;
     private bool isPlayerNearby;  // 玩家是否在附近推动箱子
