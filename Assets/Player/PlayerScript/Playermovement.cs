@@ -35,7 +35,6 @@ public class PlayerMovement : MonoBehaviour
     // 检测是否站在地面上，包括平台、箱子和斜坡
     void CheckGround()
     {
-        // 使用 OverlapCircle 检测玩家脚下的地面
-        isGrounded = Physics2D.OverlapCircle(transform.position, 1.1f, groundMask);
+        isGrounded = Physics2D.OverlapCircle(new Vector2(transform.position.x, transform.position.y - 1f), 0.01f, groundMask);
     }
 }
